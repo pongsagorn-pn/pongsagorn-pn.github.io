@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pongsagorn Pn | Computer Engineering Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --accent-color: #58a6ff;
+            --mono-font: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 760px;
+            width: 100%;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .terminal-header {
+            font-family: var(--mono-font);
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-family: var(--mono-font);
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .bio {
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        section {
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+            color: var(--accent-color);
+            font-family: var(--mono-font);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 16px;
+        }
+
+        .card h3 {
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+            color: var(--text-primary);
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-family: var(--mono-font);
+        }
+
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .badge {
+            background-color: #21262d;
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            font-family: var(--mono-font);
+            font-size: 0.8rem;
+            padding: 4px 10px;
+            border-radius: 20px;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-family: var(--mono-font);
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="terminal-header">[ pongsagorn-pn.github.io ~ portfolio ]</div>
+            <h1>Pongsagorn Pn</h1>
+            <p class="tagline">Computer Engineering Student | Embedded Systems & System Software Developer</p>
+            <p class="bio">
+                นักศึกษาวิศวกรรมคอมพิวเตอร์ มทร.อีสาน วิทยาเขตขอนแก่น (ECP1N) สนใจการพัฒนาซอฟต์แวร์ระบบ, สถาปัตยกรรมคอมพิวเตอร์ และการเขียนโปรแกรมควบคุมฮาร์ดแวร์ กำลังฝึกฝนทักษะ C, Python และ Linux
+            </p>
+        </header>
+
+        <section>
+            <h2>// CURRENT LEARNING & SKILLS</h2>
+            <div class="badge-list">
+                <span class="badge">C Programming</span>
+                <span class="badge">Linux & Termux</span>
+                <span class="badge">Git Version Control</span>
+                <span class="badge">Digital Circuits</span>
+                <span class="badge">Python</span>
+                <span class="badge">Microcontroller & IoT</span>
+            </div>
+        </section>
+
+        <section>
+            <h2>// ACADEMIC & ENGINEERING FOCUS</h2>
+            <div class="skills-grid">
+                <div class="card">
+                    <h3>Embedded & Systems</h3>
+                    <p>ศึกษาการออกแบบวงจรดิจิทัล ระบบสมองกลฝังตัว และการควบคุมฮาร์ดแวร์ระดับล่าง</p>
+                </div>
+                <div class="card">
+                    <h3>Software Architecture</h3>
+                    <p>การเขียนโปรแกรมเชิงโครงสร้าง โครงสร้างข้อมูล และอัลกอริทึมที่มีประสิทธิภาพสูง</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>// 4-YEAR CAREER GOAL</h2>
+            <div class="card">
+                <p style="color: var(--text-primary); font-family: inherit;">
+                    มุ่งสู่การเป็นวิศวกรคอมพิวเตอร์ด้านระบบสมองกลฝังตัวและซอฟต์แวร์ระบบ (Embedded Systems & Systems Engineer) ที่มีความเชี่ยวชาญทั้งฝั่งฮาร์ดแวร์และซอฟต์แวร์ พร้อมสร้างสรรค์ผลงานวิศวกรรมที่เสถียรและใช้งานได้จริง
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>// CONTACT & LINKS</h2>
+            <p style="font-family: var(--mono-font); font-size: 0.9rem;">
+                GitHub Profile: <a href="https://github.com/pongsagorn-pn" target="_blank">github.com/pongsagorn-pn</a><br>
+                Institution: Rajamangala University of Technology Isan, Khon Kaen Campus
+            </p>
+        </section>
+
+        <footer>
+            <p>© 2026 Pongsagorn Pn. Built with Vanilla HTML/CSS on GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
